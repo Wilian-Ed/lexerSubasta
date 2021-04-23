@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {JsonService} from './../json.service';
-
+import { Data } from '@angular/router';
+import { ListService } from './../list.service';
 
 @Component({
   selector: 'app-table',
@@ -9,14 +9,19 @@ import {JsonService} from './../json.service';
 })
 export class TableComponent implements OnInit{
 
-  posts = [];
+  list: Data[] = [];
+
+  constructor(private listService: ListService){}
 
   ngOnInit(): void{
+    this.fetchList();
   }
 
-  constructor(private json: JsonService){
-    setTimeout((): void => {
-      // tslint:disable-next-line:semicolon
-      this.json.getJson().subscribe((data: any) => {this.posts = data; }); console.log(this.posts); } , 2000);
-    }
+  fetchList(): void{
+    this.listService.getList().subscribe((list: Data[]) => {
+      this.list = list;
+      console.log(list);
+    });
+  }
+
 }

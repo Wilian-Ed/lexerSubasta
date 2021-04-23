@@ -8,7 +8,6 @@ import { TextComponent } from './text/text.component';
 import { TableComponent } from './table/table.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { JsonService } from './json.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,6 @@ import { JsonService } from './json.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [JsonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { JsonService } from './json.service';
+import { ListService } from './list.service';
 
-describe('JsonService', () => {
-  let service: JsonService;
+describe('ListService', () => {
+  let service: ListService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(JsonService);
+    service = TestBed.inject(ListService);
   });
 
   it('should be created', () => {
