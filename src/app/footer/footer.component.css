@@ -1,0 +1,101 @@
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (min-width: 320px) {
+    .PiePagina{
+        border-radius: 10px 10px 0px 0px;
+        background-color: rgba(255,255,255,0.35);
+        font-size: 8px;
+        color: white;
+        background-image: url('../../assets/Daco_578520.png');
+        background-size: 90px 28px;
+        background-repeat: no-repeat;
+        padding-left: 15px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        background-position: 95%;
+    }
+}
+
+/* Extra small devices (phones, 375px and down) */
+@media only screen and (mmin-width: 375px) {
+    .PiePagina{
+        border-radius: 40px 40px 0px 0px;
+        background-color: rgba(255,255,255,0.35);
+        font-size: 8px;
+        color: white;
+        background-image: url('../../assets/Daco_578520.png');
+        background-size: 115px 33px;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        background-position: 95%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 425px and up) */
+@media only screen and (min-width: 425px) {
+    .PiePagina{
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgba(255,255,255,0.35);
+        font-size: 10px;
+        color: white;
+        background-image: url('../../assets/Daco_578520.png');
+        background-size: 115px 33px;
+        background-repeat: no-repeat;
+        padding-left: 25px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        background-position: 95%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .PiePagina{
+        border-radius: 40px 40px 0px 0px;
+        background-color: rgba(255,255,255,0.35);
+        font-size: 14.4px;
+        color: white;
+        background-image: url('../../assets/Daco_578520.png');
+        background-size: 210px 60.228px;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        background-position: 95%;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    .PiePagina{
+        border-radius: 40px 40px 0px 0px;
+        background-color: rgba(255,255,255,0.35);
+        font-size: 17px;
+        color: white;
+        background-image: url('../../assets/Daco_578520.png');
+        background-size: 247.8px 71.1px;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        background-position: 95%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (min-width: 1440px) {
+    .PiePagina{
+        border-radius: 40px 40px 0px 0px;
+        background-color: rgba(255,255,255,0.35);
+        font-size: 28px;
+        color: white;
+        background-image: url('../../assets/Daco_578520.png');
+        background-size: 409px 117.4px;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        background-position: 95%;
+    }
+}
