@@ -1,0 +1,29 @@
+.contenedorDesc{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 200px;
+  flex-wrap: wrap;
+  min-width: 250px;
+}
+
+@media only screen and (max-width:600px) and (min-width:1px){
+
+  .contenedorDesc{
+        margin: 0px;
+    }
+}
+
+/*
+@media screen and(max-width:1200px){
+    .contenedorDesc{
+        margin: 0 20;
+    }
+}
+
+@media screen and(max-width:250px){
+    .contenedorDesc{
+        display: flex;
+        margin: 0 20;
+    }
+}
+*/

@@ -1,0 +1,21 @@
+.tableContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table{
+  color: white;
+  font-size: 24px;
+  font-weight: lighter;
+  width: 80%;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(255,255,255,0.35);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
