@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {JsonService} from './json.service';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +7,4 @@ import {JsonService} from './json.service';
 })
 export class AppComponent{
   title = 'lexerSubasta';
-
-
-  constructor(private json: JsonService){
-    this.json.getJson('http://analizadorlexico1.herokuapp.com/api/table').subscribe((res: any) => {console.log(res); });
-  }
-
-  posts = [];
-
 }

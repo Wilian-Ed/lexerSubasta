@@ -1,5 +1,5 @@
 export interface Post{
-  'Nombre': string;
-  'Valor': string;
-  'Codigo': string;
+  'nombre': string;
+  'valor': string;
+  'codigo': string;
 }
