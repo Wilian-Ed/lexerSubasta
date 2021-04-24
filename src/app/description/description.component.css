@@ -9,7 +9,7 @@
 @media only screen and (max-width:600px) and (min-width:1px){
 
   .contenedorDesc{
-        margin: 0px;
+        justify-content: center;
     }
 }
 

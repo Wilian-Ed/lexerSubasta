@@ -3,4 +3,8 @@ body{
   background-color: #1D1D1D;
   color: #A9A9A9;
   font-family: Roboto,sans-serif;
+  background-image: url(./assets/Rectangle45.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: right bottom;
 }

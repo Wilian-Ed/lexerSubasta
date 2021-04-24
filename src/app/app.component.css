@@ -4,3 +4,16 @@
   color: white;
   font-weight: normal;
 }
+
+.fond{
+  background-image: url("../assets/Group3510.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+
+.contTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}

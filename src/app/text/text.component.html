@@ -3,14 +3,14 @@
 <link rel="stylesheet" media="only screen and (max-width: 768px)" href="text.component.css">
 
 <div class="contenedor">
-<textarea class="cadena" cols="50" placeholder="Ingrese cadena" name="cadena"  required></textarea> <br> <br>
+<input type="text" class="cadena" cols="50" placeholder="Ingrese cadena" [(ngModel)]="cadena"><br> <br>
 
 
 
 </div>
 
 <div class="miboton">
-    <button id="boton" >
+    <button id="boton" (click)='intent()'>
         Enviar Puja
     </button>
 </div>
