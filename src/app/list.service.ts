@@ -13,7 +13,7 @@ export class ListService {
     return this.http.get<Data[]>('https://analizadorlexico1.herokuapp.com/api/table');
   }
 
-  lexer(cadena: string): any{
-    return this.http.get('https://analizadorlexico1.herokuapp.com/api/cadena?cadena=' + cadena);
+  lexer(texto: string): any{
+    return this.http.post<any>('https://analizadorlexico1.herokuapp.com/api/add', {cadena: texto});
   }
 }
