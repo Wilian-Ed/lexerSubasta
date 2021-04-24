@@ -12,15 +12,18 @@ export class TextComponent implements OnInit {
 
   cadena = '';
   resp: string | undefined;
+  
 
   ngOnInit(): void {
   }
 
   intent(): void{
+    this.cadena = this.cadena.replace('%', '%25');
     this.listService.lexer(this.cadena).subscribe((list: any) => {
       this.resp = list;
       console.log(this.resp);
-      alert(this.resp);
+      
+      alert(JSON.stringify(this.resp));
     });
   }
 
