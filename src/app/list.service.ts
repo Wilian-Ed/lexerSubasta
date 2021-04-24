@@ -14,6 +14,9 @@ export class ListService {
   }
 
   lexer(cadena: string): any{
-    return this.http.get('https://analizadorlexico1.herokuapp.com/api/cadena?cadena=' + cadena);
+    const headers = {};
+    const body = {};
+    return this.http.post<any>('https://analizadorlexico1.herokuapp.com/api/add?cadena=' + cadena,
+      body, { headers });
   }
 }
