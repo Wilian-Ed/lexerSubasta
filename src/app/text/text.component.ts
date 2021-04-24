@@ -20,7 +20,7 @@ export class TextComponent implements OnInit {
     this.listService.lexer(this.cadena).subscribe((list: any) => {
       this.resp = list;
       console.log(this.resp);
-      console.log(this.cadena);
+      alert(this.resp);
     });
   }
 
