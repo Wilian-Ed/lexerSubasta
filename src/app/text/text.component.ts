@@ -12,16 +12,26 @@ export class TextComponent implements OnInit {
 
   cadena = '';
   resp: string | undefined;
+  texto = '';
 
   ngOnInit(): void {
   }
 
   intent(): void{
+    this.cadena = this.cadena.replace('%', '%25');
+  
+    
     this.listService.lexer(this.cadena).subscribe((list: any) => {
       this.resp = list;
-      console.log(this.resp);
-      alert(this.resp);
+      this.texto = JSON.stringify(this.resp);
+      this.texto = this.texto.replace('"' , '');
+      this.texto = this.texto.replace('{' , '');
+      this.texto = this.texto.replace('}' , '');
+      
+      console.log(this.texto.split('"').join(''));
+      alert(this.texto.split('"').join(''));
     });
+    this.cadena = '';
   }
 
 }
