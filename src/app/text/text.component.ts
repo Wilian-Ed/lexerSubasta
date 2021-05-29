@@ -13,6 +13,7 @@ export class TextComponent implements OnInit {
   cadena = '';
   resp: string | undefined;
   texto = '';
+  aux = '';
 
   ngOnInit(): void {
   }
@@ -28,8 +29,11 @@ export class TextComponent implements OnInit {
       this.texto = this.texto.replace('{' , '');
       this.texto = this.texto.replace('}' , '');
 
-      console.log(this.texto.split('"').join(''));
-      alert(this.texto.split('"').join(''));
+      this.aux = this.texto.split('"').join('');
+      this.aux = this.aux.split(",").join("\n");
+      console.log(this.aux);
+      
+
     });
     this.cadena = '';
   }
